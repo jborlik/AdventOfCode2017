@@ -1,5 +1,7 @@
 #  Day 3
 
+import numpy as np
+
 #  37  36  35  34  33  32  31
 #  38  17  16  15  14  13  30
 #  39  18   5   4   3  12  29
@@ -46,3 +48,76 @@ theInput = puzzleinput
 print ("Puzzleinput in square: ", anIndex, " ", conSquare)
 diffToMid = findLocOnSquare(theInput,conSquare)
 print("Steps = ", anIndex + diffToMid)
+
+print("****Part2*****")
+
+bsize = 20
+borig = int((bsize-1)/2)
+bigmatrix = np.zeros((bsize+1,bsize+1), dtype=int)
+bigmatrix[borig,borig] = 1
+ix = borig + 1
+iy = borig
+iindex = 2
+isquare = 1
+iloconsquare = 0
+iside = 0
+iloconside = 0
+while (ix < bsize) and (iy < bsize):
+    thissum = bigmatrix[ix-1,iy+1] + bigmatrix[ix,iy+1] + bigmatrix[ix+1,iy+1] + \
+              bigmatrix[ix-1,iy] + bigmatrix[ix,iy] + bigmatrix[ix+1,iy] + \
+              bigmatrix[ix-1,iy-1] + bigmatrix[ix,iy-1] + bigmatrix[ix+1,iy-1]
+    bigmatrix[ix,iy] = thissum
+    print("For ix=",ix," iy=",iy," thissum=", thissum," isquare=",isquare," iloconsquare=",iloconsquare," iside=",iside," iloconsize=",iloconside)
+    if (thissum > puzzleinput):
+        print("Thissum > puzzlinput", thissum)
+        break
+    #print(bigmatrix)
+    # choose next
+    thesquare = squares[isquare]
+    maxloc = 4*(thesquare[2] - 1) - 1
+
+    iindex = iindex + 1
+    iloconsquare = iloconsquare + 1
+    iloconside = iloconside + 1
+
+    if (iloconsquare > maxloc):
+        # new square
+        print("new square, iloconsquare=",iloconsquare," maxloc=",maxloc," sidelen=",thesquare[2])
+        isquare = isquare + 1
+        iloconsquare = 0
+        iside = 0
+        iloconside = 0
+        thesquare = squares[isquare]
+        ix = ix + 1
+        iy = iy
+        continue # new square, we are done here
+
+    if (iloconside >= (thesquare[2]-1)):
+        iside = iside + 1
+        iloconside = 0
+
+    # okay now update 
+    if (iside == 0):
+        ix = ix
+        iy = iy + 1
+    elif (iside == 1):
+        ix = ix - 1
+        iy = iy
+    elif (iside == 2):
+        ix = ix
+        iy = iy - 1
+    elif (iside == 3):
+        ix = ix + 1
+        iy = iy
+    else:
+        # nothing?
+        pass
+    
+
+
+        
+
+
+
+
+
