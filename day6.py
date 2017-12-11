@@ -3,7 +3,7 @@
 with open('day6.dat') as datafile:
     banks = [int(x) for x in datafile.readline().strip().split()]
 
-banks = [0, 2, 7, 0]  # test
+#banks = [0, 2, 7, 0]  # test
 
 def realloccycle(thebanks):
     maxii = thebanks.index(max(thebanks))
@@ -28,7 +28,7 @@ for i in range(1,1000000):
     thisstate = ' '.join(str(x) for x in banks)
     try:
         locinmemory = memory.index(thisstate)
-        print("FOUND LOOP FROM LOC: ", locinmemory, " to step: ", i)
+        print("FOUND LOOP FROM LOC: ", locinmemory, " to step: ", i, " len=",i-locinmemory)
         break
     except (ValueError):
         memory.append(thisstate)
