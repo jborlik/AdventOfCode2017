@@ -12,6 +12,7 @@ Code is tested with Python 3.6.3 (Anaconda distribution) on Win10.  Developed wi
 * Day 6:  "Reallocate" values by looping, looking for previous states.  I stored and recognized previous states by combining into strings.  Part 2 was effectively solved, which maybe means there is a clever solution for Part 1 that didn't require the whole thing.
 * Day 7:  Create tree given specification of node name + children names.  Used classes, and _dictionary comprehensions_.
 * Day 8:  Iteration over rules to increment registers.  Dictionaries.
+* Day 9:  Iterate through long string to remove "garbage" and count group depths
 
 
 
