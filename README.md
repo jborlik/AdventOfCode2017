@@ -15,7 +15,7 @@ Code is tested with Python 3.6.3 (Anaconda distribution) on Win10.  Developed wi
 * Day 9:  Iterate through long string to remove "garbage" and count group depths
 * Day 10:  Creating a hash algorithm, based upon reversing sections of a ring-array.  Interesting, if maddening in its details.
 * Day 11:  Follow instructions to walk along a hex grid.  Fun!  Red Blob Games blog posting was _very helpful_:  https://www.redblobgames.com/grids/hexagons/
-
+* Day 12:  Iteratively walk a graph to identify the number of connected nodes.  Also an interesting use of dictionary comprehension + regex for input.
 
 
 ## See previous work at:
