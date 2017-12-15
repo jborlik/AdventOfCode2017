@@ -17,6 +17,8 @@ Code is tested with Python 3.6.3 (Anaconda distribution) on Win10.  Developed wi
 * Day 11:  Follow instructions to walk along a hex grid.  Fun!  Red Blob Games blog posting was _very helpful_:  https://www.redblobgames.com/grids/hexagons/
 * Day 12:  Iteratively walk a graph to identify the number of connected nodes.  Also an interesting use of dictionary comprehension + regex for input.
 * Day 13:  Mod to find location of "scanners".  This took longer than necessary, because of a misinterpretation of part 2 (not severity=0 but rather any hit).  I think that there is a much much faster solution if one looks at the times allowable by the particular scanner layers.
+* Day 14:  Use the knot hash from day 10 to create a 128x128 grid from a base key+number in binary.  Part two required finding contiguous elements, used some recursion to identify and remove "seen" elements.
+
 
 
 
