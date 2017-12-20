@@ -21,6 +21,7 @@ Code is tested with Python 3.6.3 (Anaconda distribution) on Win10.  Developed wi
 * Day 15:  Compare the lowest 16-bits of the results of two generator functions, i.e. bit and with 65535.  Completed this within 50 mins of the start, but was still ~800 or so.
 * Day 16:  Follow the instructions to iterate a string, very usual.  For part 2 the key insight is that there is a limit cycle, as brute-forcing a billion iterations is not feasible on current hardware.
 * Day 17:  Here's a case where brute force (50M iterations) are feasible, but only if the individual operations are fast enough.  After failing with a regular list, a deque seems to work better.
+* Day 18:  More instructions + state tracking.  Dictionaries are helpful.  Part 2 took time to debug, because I hadn't been removing from the front of the list.
 
 
 
