@@ -22,6 +22,7 @@ Code is tested with Python 3.6.3 (Anaconda distribution) on Win10.  Developed wi
 * Day 16:  Follow the instructions to iterate a string, very usual.  For part 2 the key insight is that there is a limit cycle, as brute-forcing a billion iterations is not feasible on current hardware.
 * Day 17:  Here's a case where brute force (50M iterations) are feasible, but only if the individual operations are fast enough.  After failing with a regular list, a deque seems to work better.
 * Day 18:  More instructions + state tracking.  Dictionaries are helpful.  Part 2 took time to debug, because I hadn't been removing from the front of the list.
+* Day 19:  Follow a line in a big string array "map".  The trickiest part is setting up direction arrays.
 
 
 
