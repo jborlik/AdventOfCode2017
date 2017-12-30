@@ -24,7 +24,8 @@ Code is tested with Python 3.6.3 (Anaconda distribution) on Win10.  Developed wi
 * Day 18:  More instructions + state tracking.  Dictionaries are helpful.  Part 2 took time to debug, because I hadn't been removing from the front of the list.
 * Day 19:  Follow a line in a big string array "map".  The trickiest part is setting up direction arrays.
 * Day 20:  Simulate particle given initial position, velocity, acceleration.  Part 2 involved looking for collisions.  I tried math (computing potential collision times between each particle using quadratic equation, but that ended up being too complex.  Just brute force it.
-
+* Day 21:  *SKIPPED*
+* Day 22:  Walking around a big ("infinite") grid, changing states.  I used string manipulation, which was probably slower than necessary.
 
 
 
