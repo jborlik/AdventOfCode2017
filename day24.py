@@ -46,13 +46,28 @@ findLinkableCandidate(0, [], components)
 
 print("number of potential bridges:", len(candidates))
 
+ISPARTTWO = True
 maxstrength = 0
+maxlength = 0
 maxbridge = []
 for aCandidate in candidates:
+    length = len(aCandidate)
     aStr = countBridgeStrength(aCandidate)
-    if aStr > maxstrength:
-        maxstrength = aStr
-        maxbridge = aCandidate
+    if ISPARTTWO:
+        if length > maxlength:
+            maxlength = length
+            maxstrength = aStr
+            maxbridge = aCandidate
+        elif length == maxlength:
+            if aStr > maxstrength:
+                maxstrength = aStr
+                maxbridge = aCandidate
+
+    else:
+        if aStr > maxstrength:
+            maxstrength = aStr
+            maxbridge = aCandidate
 
 print("Max strength=", maxstrength)
+print("Max length=", maxlength)
 print("Max bridge=", maxbridge)
