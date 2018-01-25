@@ -29,6 +29,7 @@ representation (for key/value lookups), as well as a hand-created set of rotatio
 * Day 22:  Walking around a big ("infinite") grid, changing states.  I used string manipulation, which was probably slower than necessary.
 * Day 23:  Did part 1, no problem.  But part 2 doesn't seem to exit.
 * Day 24:  Recursively define candidate bridges.  The trick is to pass in a list of available components (which needs to be copied)
+* Day 25:  Just a little state machine.  Use a dictionary as an "infinite tape".  Nice!
 
 
 
