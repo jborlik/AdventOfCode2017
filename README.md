@@ -27,7 +27,7 @@ Code is tested with Python 3.6.3 (Anaconda distribution) on Win10.  Developed wi
 * Day 21:  Very inefficient and ugly code to go back and forth between a matrix (numpy) array and a string
 representation (for key/value lookups), as well as a hand-created set of rotation/mirroring for the rules.  On the other hand, once it started running, it actually gave the right answers.
 * Day 22:  Walking around a big ("infinite") grid, changing states.  I used string manipulation, which was probably slower than necessary.
-* Day 23:  Did part 1, no problem.  But part 2 doesn't seem to exit.
+* Day 23:  Did part 1, no problem.  But part 2 couldn't use the same code... The actual program needed to be implemented, and then adjusted.  Some of the inner loop was unnecessary, after studying what it was actually doing.
 * Day 24:  Recursively define candidate bridges.  The trick is to pass in a list of available components (which needs to be copied)
 * Day 25:  Just a little state machine.  Use a dictionary as an "infinite tape".  Nice!
 
